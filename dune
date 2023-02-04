@@ -1,0 +1,14 @@
+(library
+ (modules wave_function_collapse)
+ (public_name wave_function_collapse)
+ (wrapped false))
+
+(executable
+ (modules bin)
+ (name bin)
+ (libraries wave_function_collapse))
+
+(test
+ (modules tests)
+ (name tests)
+ (libraries wave_function_collapse))

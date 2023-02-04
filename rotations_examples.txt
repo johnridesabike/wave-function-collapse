@@ -1,0 +1,13 @@
+# Use this to specify which tiles are rotations of each other.
+#
+# Each line begins with an X, T, I, L or /, followed by a :. The first character
+# represents the type of symmetry that the tile has. After that, list the
+# characters for each possible 90-degree rotation. Each list ends with a line
+# break and is whitespace-sensitive (a space character is a valid rotation).
+
+X:┼
+I:│─
+L:╰╭╮╯
+T:┬┤┴├
+X: 
+X:X

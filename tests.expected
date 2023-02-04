@@ -1,0 +1,96 @@
+Simple tiled test 1: generating shoreline succeeds.
+                                
+                .%%%%%%%,       
+               .%~~~~~~~%%%%%%, 
+              .%~~~~~~~~~~~~~~%%
+             .%~~~~~~~~~~~~~~~~~
+            .%~~~~~~~~~~~~~~~~~~
+           .%~~~~~~~~~~~~~~~~~~~
+          .%~~~~~~~~~~~~~~~~~~~~
+         .%~~~~~~~~~~~~~~~~~~~~~
+        .%~~~~~~~~~~~~~~~~~~~~~~
+%%%%%%%%%~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Simple tiled test 2: a collapse failure.
+Contradiction found at y=3 x=23.
+                                
+               % % %            
+              %~%~%~%  %        
+             %~~~~~~~% ~        
+            %~~~~~~~~~          
+           %~~~~~~~~~~~         
+          %~~~~~~~~~~~~~        
+       % %~~~~~~~~~~~~~~~       
+      %~%~~~~~~~~~~~~~~~~~      
+     %~~~~~~~~~~~~~~~~~~~~~     
+    %~~~~~~~~~~~~~~~~~~~~~~~    
+%  %~~~~~~~~~~~~~~~~~~~~~~~~~   
+
+Overlapping test 1: generating contours succeeds.
+   X        XX          X    XXX
+    XXXX      X          X      
+XX      XX     X          XX    
+  X       X     XXX         XXX 
+   XXXX    X       XXXXX       X
+       XX   XX          XXX     
+XX       X    XX           XX   
+  XXX     X     XXXXXXX      XXX
+     X     XX          XXX      
+      XX     XX           XX    
+XX      XX     XXXXXXX      XXXX
+  XXX     XX          XXX       
+
+Overlapping test 2: generating rotating contours succeeds.
+XX        X      XX      XXX   X
+        XX    XXX               
+   XXXXX    XX        XX        
+  X        X      XXXX  X      X
+XX        X    XXX       XX  XX 
+     XX  X    X            XX   
+   XX  XX   XX        XX        
+XXX        X    XX  XX  XX      
+          X    X  XX      XX  XX
+    XXX   X   X             XX  
+ XXX   X   X  X      XX         
+X       X  X   X    X  X       X
+
+Pathologic test 1: input with a single tile succeeds (simple tiled).
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Pathologic test 2: input with a single tile succeeds (overlapping).
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Error test 1: non-rectangular input is an error.
+Failed successfully: Non-rectangular input
+
+Error test 2: empty input is an error.
+Failed successfully: Empty data
+
+Error test 3: small overlap size is an error.
+Failed successfully: Overlap pattern size must be 2 or greater.
+
+Error test 4: a duplicate in a transforms map is an error.
+Failed successfully: Tile 88 is already set.
